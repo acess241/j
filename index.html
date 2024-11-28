@@ -113,7 +113,7 @@
     <main>
         <div class="signup-form">
             <h2>Crie sua Conta</h2>
-            <form action="file:///C:/Users/serta/Downloads/KMSPico_Install_x64/site.html" method="POST">
+            <form id="signup-form" action="javascript:void(0);">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
@@ -137,5 +137,13 @@
     <footer>
         <p>&copy; 2024 SCHOOLBAG VIRTUAL - Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            window.location.href = "file:///D:/site.html"; // Redireciona para o arquivo local
+        });
+    </script>
 </body>
 </html>
+
